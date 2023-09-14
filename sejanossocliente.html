@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sejanossocliente.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" target="_self"><img class="logo" src="imagens/logo.png" alt="LogoMarca"></a>
+        <nav class="navCabecalho">
+            <button class="efeito" type="button">Para você</button>
+            <button class="efeito" type="button">Para empresas</button>
+            <button class="efeito" type="button">Atendimento</button>
+            <button class="efeito" type="button">Institucional</button>
+        </nav>
+        <nav class="navCabecalho">
+            <a href="emprestimo.html" rel="next" target="_self"><button class="efeito-conta" type="button">acesse sua
+                    conta</button></a>
+            <a href="">CRIE SUA CONTA</a>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <nav>
+                <a href="index.html" target="_self"><button type="button">Tela Inicial</button></a>
+                <a href="sejanossocliente.html" target="_self"><button type="button">Seja Nosso Cliente</button></a>
+            </nav>
+            <div>
+                <img src="" alt="Propaganda">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque atque aut, obcaecati quo omnis.</p>
+            </div>
+            <form action="cadastrocliente">
+                <h2>Para descobrir a oferta que temos para você, preencha os campos:</h2>
+                <label>Nome: </label>
+                <input type="text" name="nome">
+                <label>Email: </label>
+                <input type="email" name="email">
+                <label>Telefone: </label>
+                <input type="tel" name="telefone">
+                <label>Escolha o serviço desejado</label>
+                <select name="servico">
+                    <option value="teste">teste</option>
+                </select>
+                <label>Você é aposentado?</label>
+
+                <input type="radio" name="option" id="sim" value="SIM">
+                <label for="sim">Sim</label>
+                <input type="radio" name="option" id="nao" value="NAO">
+                <label for="nao">Não</label>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <img class="logoFooter" src="imagens/logo.png" alt="LogoMarca">
+            <p>Sempre ao seu lado</p>
+        </div>
+        <nav class="navFooter">
+            <h2 id="contato">Contatos</h2>
+            <img class="footerImg" src="imagens/iconfacebook.png" alt="Facebook">
+            <img class="footerImg" src="imagens/iconinstagram.png" alt="Instagram">
+            <img class="footerImg" src="imagens/iconlinkedin.png" alt="LinkedIn">
+            <img class="footerImg" src="imagens/iconwhasapp.png" alt="WhatsApp">
+        </nav>
+    </footer>
+</body>
+
+</html>

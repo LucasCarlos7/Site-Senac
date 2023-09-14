@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo</title>
+    <link rel="stylesheet" href="emprestimo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" target="_self"><img class="logo" src="imagens/logo.png" alt="LogoMarca"></a>
+        <nav class="navCabecalho">
+            <button class="efeito" type="button">Para você</button>
+            <button class="efeito" type="button">Para empresas</button>
+            <button class="efeito" type="button">Atendimento</button>
+            <button class="efeito" type="button">Institucional</button>
+        </nav>
+        <nav class="navCabecalho">
+            <a href="emprestimo.html" rel="next" target="_self"><button class="efeito-conta" type="button">acesse sua
+                    conta</button></a>
+            <a href="">CRIE SUA CONTA</a>
+        </nav>
+    </header>
+    <section>
+        <header>
+            <h1>Empréstimo XYZ</h1>
+        </header>
+        <article>
+            <nav>
+                <a href="index.html" target="_self"><button type="button">Tela Inicial</button></a>
+                <a href="sejanossocliente.html" target="_self"><button type="button">Seja Nosso Cliente</button></a>
+            </nav>
+            <div>
+                <h2>Empréstimo Pessoal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo numquam adipisci facere, neque, nam
+                    accusamus velit quod saepe dolorem officiis magnam nostrum consequatur. Accusantium eaque pariatur
+                    earum adipisci facilis.</p>
+            </div>
+            <div>
+                <h2>Empréstimo Consignado</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla soluta, dolorum rem quis neque
+                    voluptates! Iure cum quidem, in at, aspernatur quia quasi laborum aut porro asperiores voluptatem
+                    eveniet nemo!</p>
+            </div>
+        </article>
+        <article>
+            <form action="simulacaodeemprestimo" method="post">
+                <label>De quanto você precisa?</label>
+                <input type="text" name="valor_emprestimo">
+                <label>Mín. R$ 500,00 Máx, R$50.000,00</label>
+                <label>Selecione o tipo de empréstimo</label>
+                <input type="radio" id="pessoal" name="tipo-emprestimo" value="PESSOAL">
+                <label for="pessoal">Pessoal</label>
+                <input type="radio" id="consig" name="tipo-emprestimo" value="CONSIG">
+                <label for="consig">Consignado</label>
+                <label>Selecione a quantidade de parcelas</label>
+                <input type="radio" name="quant-parcela" id="12x" value="12X">
+                <label for="12x">12X</label>
+                <input type="radio" name="quant-parcela" id="24x" value="24X">
+                <label for="24x">24X</label>
+                <input type="radio" name="quant-parcela" id="36x" value="36X">
+                <label for="36x">36X</label>
+                <input type="radio" name="quant-parcela" id="48x" value="48X">
+                <label for="48x">48X</label>
+                <input type="radio" name="quant-parcela" id="60x" value="60X">
+                <label for="60x">60X</label>
+                <input type="radio" name="quant-parcela" id="72x" value="72X">
+                <label for="72x">72X</label>
+                <input type="button" value="Simule">
+                <input type="button" value="Seja nosso cliente">
+                <label>Resultado:</label>
+                <input type="text" name="resultado">
+            </form>
+            <aside>
+                <h2>Principais dúvidas sobre empréstimo online</h2>
+                <ol>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
+                </ol>
+            </aside>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <img class="logoFooter" src="imagens/logo.png" alt="LogoMarca">
+            <p>Sempre ao seu lado</p>
+        </div>
+        <nav class="navFooter">
+            <h2 id="contato">Contatos</h2>
+            <img class="footerImg" src="imagens/iconfacebook.png" alt="Facebook">
+            <img class="footerImg" src="imagens/iconinstagram.png" alt="Instagram">
+            <img class="footerImg" src="imagens/iconlinkedin.png" alt="LinkedIn">
+            <img class="footerImg" src="imagens/iconwhasapp.png" alt="WhatsApp">
+        </nav>
+    </footer>
+</body>
+
+</html>
