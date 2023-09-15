@@ -1,16 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 button {
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: #fff; /* Cor do texto no cabeçalho */
+    background-color: white;
+    position: fixed; /* Torna o cabeçalho fixo */
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .logo {
@@ -19,6 +28,17 @@ button {
 
 .navCabecalho {
     padding-top: 30px;
+}
+h1 {
+    color: white;
+    padding: 10px 100px;
+    background-color: #9D0D21;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .efeito {
@@ -49,6 +69,49 @@ button {
     background-color: #8fddff;
 }
 
+.conteudo-inicial {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.nav-inicial-interno {
+    background-color: white;
+    border: 2px solid black;
+    width: 200px;
+}
+
+.conteudo-inicial-interno {
+    background-color: #592C12;
+    width: 450px;
+    padding: 15px 15px 15px 15px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px #230f3a;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.conteudo-final {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+form {
+    border: 2px solid black;
+    width: 700px;
+}
+
+aside {
+    background-color: white;
+    border: 2px solid black;
+    width: 700px;
+}
 
 
 

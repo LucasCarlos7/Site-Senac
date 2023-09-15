@@ -1,22 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 button {
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-button {
-    margin-left: 10px;
-    font-size: medium;
-    font-weight: bold;
+    color: #fff; /* Cor do texto no cabeçalho */
+    background-color: white;
+    position: fixed; /* Torna o cabeçalho fixo */
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .navCabecalho {
@@ -94,7 +97,7 @@ button {
 .propaganda {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 120px;
     padding-bottom: 20px;
     background-image: linear-gradient(to right, #02B5FF, #022AFF, #02B5FF);
 }
