@@ -29,64 +29,145 @@
         </header>
         <article class="conteudo-inicial">
             <nav class="nav-inicial-interno">
-                <a href="index.html" target="_self"><button type="button">Tela Inicial</button></a>
-                <a href="sejanossocliente.html" target="_self"><button type="button">Seja Nosso Cliente</button></a>
+                <a href="index.html" target="_self">
+                    <button class="button nav inicial" type="button">Tela Inicial</button>
+                </a>
+                <a href="sejanossocliente.html" target="_self">
+                    <button class="button nav inicial" type="button">Seja Nosso Cliente</button>
+                </a>
             </nav>
             <div class="conteudo-inicial-interno">
-                <h2>Empréstimo Pessoal</h2>
-                <p>O Empréstimo XYZ é uma solução indicada para cumprir metas: reorganizar as finanças, reformar a casa, abrir seu negócio, fazer a viagem dos sonhos e muito mais. Trabalhamos preços diferenciados para cada perfil de cliente e com parcelamento de até 72x. Ah! E você ainda pode pagar a primeira parcela em até 60 dias.</p>
+                <h2 class="h2 emprestimo">Empréstimo Pessoal</h2>
+                <p>O Empréstimo XYZ é uma solução indicada para cumprir metas: reorganizar as finanças, reformar a casa,
+                    abrir seu negócio, fazer a viagem dos sonhos e muito mais. Trabalhamos preços diferenciados para
+                    cada perfil de cliente e com parcelamento de até 72x. Ah! E você ainda pode pagar a primeira parcela
+                    em até 60 dias.</p>
             </div>
             <div class="conteudo-inicial-interno">
-                <h2>Empréstimo Consignado</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla soluta, dolorum rem quis neque
-                    voluptates! Iure cum quidem, in at, aspernatur quia quasi laborum aut porro asperiores voluptatem
-                    eveniet nemo!</p>
+                <h2 class="h2 emprestimo">Empréstimo Consignado</h2>
+                <p>Para contratar o Consignado XYZ, você precisa ser funcionário com carteira assinada de uma empresa
+                    parceira. Se a empresa em que você trabalha ainda não é nossa parceira, você pode indicá-la e nós
+                    entraremos em contato com ela.
+
+
+                </p>
             </div>
+
+
         </article>
         <article class="conteudo-final">
             <form action="simulacaodeemprestimo" method="post">
-                <label>De quanto você precisa?</label>
-                <input type="text" name="valor_emprestimo">
-                <label>Mín. R$ 500,00 Máx, R$50.000,00</label>
-                <label>Selecione o tipo de empréstimo</label>
-                <input type="radio" id="pessoal" name="tipo-emprestimo" value="PESSOAL">
-                <label for="pessoal">Pessoal</label>
-                <input type="radio" id="consig" name="tipo-emprestimo" value="CONSIG">
-                <label for="consig">Consignado</label>
-                <label>Selecione a quantidade de parcelas</label>
-                <input type="radio" name="quant-parcela" id="12x" value="12X">
-                <label for="12x">12X</label>
-                <input type="radio" name="quant-parcela" id="24x" value="24X">
-                <label for="24x">24X</label>
-                <input type="radio" name="quant-parcela" id="36x" value="36X">
-                <label for="36x">36X</label>
-                <input type="radio" name="quant-parcela" id="48x" value="48X">
-                <label for="48x">48X</label>
-                <input type="radio" name="quant-parcela" id="60x" value="60X">
-                <label for="60x">60X</label>
-                <input type="radio" name="quant-parcela" id="72x" value="72X">
-                <label for="72x">72X</label>
-                <input type="button" value="Simule">
-                <input type="button" value="Seja nosso cliente">
-                <label>Resultado:</label>
-                <input type="text" name="resultado">
+                <label class="titulo">De quanto você precisa?</label>
+                <input class="input" type="text" name="valor_emprestimo" placeholder="R$ 50.000,00" inputmode="numeric">
+                <div id="exemplo-valor">
+                    <label>Mín. R$ 500,00 </label>
+                    <label>Máx, R$50.000,00</label>
+                </div>
+                <label class="titulo">Selecione o tipo de empréstimo</label>
+                <div>
+                    <input type="radio" id="pessoal" name="tipo-emprestimo" value="PESSOAL">
+                    <label for="pessoal">Pessoal</label>
+
+                    <input type="radio" id="consig" name="tipo-emprestimo" value="CONSIG">
+                    <label for="consig">Consignado</label>
+                </div>
+                <label class="titulo">Selecione a quantidade de parcelas</label>
+
+                <div>
+                    <input type="radio" name="quant-parcela" id="12x" value="12X">
+                    <label for="12x">12X</label>
+                    <input type="radio" name="quant-parcela" id="24x" value="24X">
+                    <label for="24x">24X</label>
+                    <input type="radio" name="quant-parcela" id="36x" value="36X">
+                    <label for="36x">36X</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="quant-parcela" id="48x" value="48X">
+                    <label for="48x">48X</label>
+                    <input type="radio" name="quant-parcela" id="60x" value="60X">
+                    <label for="60x">60X</label>
+                    <input type="radio" name="quant-parcela" id="72x" value="72X">
+                    <label for="72x">72X</label>
+                </div>
+
+                <div class="button-forms">
+                    <input class="efeito button" type="button" value="Simule">
+                    <input class="efeito button" type="button" value="Seja nosso cliente">
+                </div>
+                <div>
+                    <label class="titulo">Resultado:</label>
+                    <input id="result" type="text" name="resultado" placeholder="R$ 00.000,00">
+                </div>
             </form>
             <aside>
                 <h2>Principais dúvidas sobre empréstimo online</h2>
                 <ol>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, distinctio!</li>
+                    <div class="hover-trigger">
+                        <li class="titulo-lista">Quem pode solicitar?</li>
+                        <ul class="conteudo-lista">
+                            <li>
+                                Pessoas entre 18 a 72 anos;
+                            </li>
+                            <li>
+                                No site do XYZ: disponível para clientes XYZ;
+                            </li>
+                            <li>
+                                Com o Cartão XYZ: disponível para quem tem esse cartão;
+                            </li>
+                            <li>
+                                Com a Conta XYZ ou Empréstimo Fácil: disponível para quem possui conta corrente no XYZ.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hover-trigger">
+                        <li class="titulo-lista">
+                            Como contratar o empréstimo Pessoal?
+                        </li>
+                        <ul class="conteudo-lista">
+                            <li>
+                                Pedido de crédito: a partir do valor solicitado, oferecemos as melhores condições do
+                                seu empréstimo, como valor das parcelas, taxa de juros e prazo.
+                            </li>
+                            <li>
+                                Análise financeira: fazemos uma análise para saber se o empréstimo solicitado está
+                                de acordo com seu perfil. Quem já é cliente XYZ, pode verificar se tem crédito
+                                pré-aprovado disponível.
+                            </li>
+                            <li>
+                                Liberação do crédito: se o empréstimo for aprovado, você assina os documentos e o
+                                valor já é liberado à vista em sua conta.
+                            </li>
+                            <li>
+                                Pagamento das parcelas: você paga as prestações da forma que escolheu (carnê ou
+                                débito em conta).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hover-trigger">
+                        <li class="titulo-lista">
+                            Quais são as formas de pagamento?
+                        </li>
+                        <ul class="conteudo-lista">
+                            <li>
+                                Pelo site do XYZ: por boleto ou débito automático em instituições parceiras.
+                            </li>
+                            <li>
+                                Pelo Cartão XYZ: direto na fatura do cartão.
+                            </li>
+                            <li>
+                                Com a Conta XYZ ou se for Empréstimo Fácil: débito na própria conta.
+                            </li>
+                        </ul>
+                    </div>
                 </ol>
             </aside>
         </article>
     </section>
     <footer>
-        <div>
+        <div id="divFooterLogo">
             <img class="logoFooter" src="imagens/logo.png" alt="LogoMarca">
-            <p>Sempre ao seu lado</p>
+            <p id="pFooter">Sempre ao seu lado</p>
         </div>
         <nav class="navFooter">
             <h2 id="contato">Contatos</h2>

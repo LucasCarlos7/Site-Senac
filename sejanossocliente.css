@@ -1,9 +1,16 @@
+@charset "UTF-8";
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 button {
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .cabecalho {
@@ -49,8 +56,129 @@ button {
     background-color: #8fddff;
 }
 
+.nav-inicial-interno {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.button.nav.inicial {
+    margin: 10px 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px 10px 5px 10px;
+    border: white;
+    padding-bottom: 20px;
+}
 
+.button.nav.inicial:hover {
+    color: #9D0D21;
+    border-bottom: 2px solid #022AFF;
+}
+
+.principal {
+    background-color: #F2F2F4;
+    background-image: url(imagens/sejanossocliente.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.texto-principal {
+    margin-left: 210px;
+    padding-bottom: 20px;
+    width: 650px;
+    height: 276px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.principal nav {
+    border: 2px solid black;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 50px;
+    width: 150px;
+    height: 250px;
+}
+
+form {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 80px 80px;
+}
+
+.divForm {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+form select {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.divForm2 {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.inputForm {
+    border: 0px;
+    border-bottom: 2px solid black;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#button-forms {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #022AFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+#button-forms:hover {
+    background-color: greenyellow;
+    color: black;
+}
 
 footer {
     border-top: 2px solid black;
@@ -60,10 +188,20 @@ footer {
     background-color: lightgray;
 }
 
+#divFooterLogo {
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
 .logoFooter {
     width: 100px;
-    padding-left: 25px;
+}
 
+#pFooter {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .footerImg {

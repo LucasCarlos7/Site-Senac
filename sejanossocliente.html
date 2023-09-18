@@ -25,40 +25,63 @@
     </header>
     <section>
         <article>
-            <nav>
-                <a href="index.html" target="_self"><button type="button">Tela Inicial</button></a>
-                <a href="sejanossocliente.html" target="_self"><button type="button">Seja Nosso Cliente</button></a>
-            </nav>
-            <div>
-                <img src="imagens/depoimento02.png" alt="Propaganda">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque atque aut, obcaecati quo omnis.</p>
+
+            <div class="principal">
+                <nav class="nav-inicial-interno">
+                    <a href="index.html" target="_self"><button class="button nav inicial" type="button">Tela Inicial</button></a>
+                    <a href="emprestimo.html" target="_self"><button class="button nav inicial" type="button">Empréstimo</button></a>
+                </nav>
+                <div class="texto-principal">
+                    <h2>Seja Nosso Cliente</h2>
+                    <p>
+                        Com 50 anos de experiência, somos líderes no mercado financeiro para varejistas.
+                    </p>
+                    <p>
+                        Desde o início, ajudamos nossos parceiros a
+                        atender seus clientes da melhor forma possível, oferecendo produtos e serviços que os destacam
+                        frente à concorrência. Por isso, queremos fazer parte das suas conquistas e garantir o
+                        crescimento
+                        do seu negócio.
+                    </p>
+                    <p>
+                        Preencha já o seu Pré-cadastro para se tornar um parceiro XYZ Financiamentos.
+                    </p>
+                </div>
             </div>
             <form action="cadastrocliente">
                 <h2>Para descobrir a oferta que temos para você, preencha os campos:</h2>
-                <label>Nome: </label>
-                <input type="text" name="nome">
-                <label>Email: </label>
-                <input type="email" name="email">
-                <label>Telefone: </label>
-                <input type="tel" name="telefone">
+                <div class="divForm">
+                    <label>Nome: </label>
+                    <input  class="inputForm" type="text" name="nome">
+                    <label>Email: </label>
+                    <input  class="inputForm" type="email" name="email">
+                    <label>Telefone: </label>
+                    <input  class="inputForm" type="tel" name="telefone">
+                </div>
+
                 <label>Escolha o serviço desejado</label>
                 <select name="servico">
-                    <option value="teste">teste</option>
+                    <option value="teste"></option>
+                    <option value="teste">Empréstimo</option>
+                    <option value="teste">Financiamento</option>
                 </select>
-                <label>Você é aposentado?</label>
+                    <label>Você é aposentado?</label>
 
-                <input type="radio" name="option" id="sim" value="SIM">
-                <label for="sim">Sim</label>
-                <input type="radio" name="option" id="nao" value="NAO">
-                <label for="nao">Não</label>
-                <input type="submit" value="Cadastrar">
+                    <div  class="divForm2">
+                        <input type="radio" name="option" id="sim" value="SIM">
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="option" id="nao" value="NAO">
+                        <label for="nao">Não</label>
+                    </div>
+
+                <input id="button-forms" type="submit" value="Cadastrar">
             </form>
         </article>
     </section>
     <footer>
-        <div>
+        <div id="divFooterLogo">
             <img class="logoFooter" src="imagens/logo.png" alt="LogoMarca">
-            <p>Sempre ao seu lado</p>
+            <p id="pFooter">Sempre ao seu lado</p>
         </div>
         <nav class="navFooter">
             <h2 id="contato">Contatos</h2>
